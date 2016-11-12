@@ -16,5 +16,12 @@ namespace GunnyAuto
         {
             InitializeComponent();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormBangLuc formBangLuc = new FormBangLuc();
+
+            formBangLuc.Show();
+        }
     }
 }
