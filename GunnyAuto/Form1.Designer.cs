@@ -51,6 +51,9 @@
             this.diChuyểnBảnĐồSangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diChuyểnBảnĐồSangPhảiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.keyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.enableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +87,8 @@
             this.gameToolStripMenuItem,
             this.mụcToolStripMenuItem,
             this.hỗTrợToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.helpToolStripMenuItem,
+            this.keyToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1000, 24);
@@ -102,7 +106,7 @@
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
             // 
             // mụcToolStripMenuItem
@@ -164,20 +168,29 @@
             // buffDame1ToolStripMenuItem
             // 
             this.buffDame1ToolStripMenuItem.Name = "buffDame1ToolStripMenuItem";
+            this.buffDame1ToolStripMenuItem.ShortcutKeyDisplayString = "Alt+L";
+            this.buffDame1ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.L)));
             this.buffDame1ToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.buffDame1ToolStripMenuItem.Text = "Buff Dame 1";
+            this.buffDame1ToolStripMenuItem.Click += new System.EventHandler(this.buffDame1ToolStripMenuItem_Click);
             // 
             // buffDame2ToolStripMenuItem
             // 
             this.buffDame2ToolStripMenuItem.Name = "buffDame2ToolStripMenuItem";
+            this.buffDame2ToolStripMenuItem.ShortcutKeyDisplayString = "Alt+K";
+            this.buffDame2ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.K)));
             this.buffDame2ToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.buffDame2ToolStripMenuItem.Text = "Buff Dame 2";
+            this.buffDame2ToolStripMenuItem.Click += new System.EventHandler(this.buffDame2ToolStripMenuItem_Click);
             // 
             // buffDame3ToolStripMenuItem
             // 
             this.buffDame3ToolStripMenuItem.Name = "buffDame3ToolStripMenuItem";
+            this.buffDame3ToolStripMenuItem.ShortcutKeyDisplayString = "Alt+J";
+            this.buffDame3ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.J)));
             this.buffDame3ToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
             this.buffDame3ToolStripMenuItem.Text = "Buff Dame 3";
+            this.buffDame3ToolStripMenuItem.Click += new System.EventHandler(this.buffDame3ToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -219,6 +232,31 @@
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
+            // keyToolStripMenuItem
+            // 
+            this.keyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.enableToolStripMenuItem,
+            this.disableToolStripMenuItem});
+            this.keyToolStripMenuItem.Name = "keyToolStripMenuItem";
+            this.keyToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.keyToolStripMenuItem.Text = "key";
+            // 
+            // enableToolStripMenuItem
+            // 
+            this.enableToolStripMenuItem.Name = "enableToolStripMenuItem";
+            this.enableToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.enableToolStripMenuItem.Text = "enable";
+            this.enableToolStripMenuItem.Click += new System.EventHandler(this.enableToolStripMenuItem_Click);
+            // 
+            // disableToolStripMenuItem
+            // 
+            this.disableToolStripMenuItem.Checked = true;
+            this.disableToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.disableToolStripMenuItem.Name = "disableToolStripMenuItem";
+            this.disableToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.disableToolStripMenuItem.Text = "disable";
+            this.disableToolStripMenuItem.Click += new System.EventHandler(this.disableToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,6 +272,8 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Gunny-TonyHoang";
+            this.Activated += new System.EventHandler(this.Form1_Activated);
+            this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -266,6 +306,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem diChuyểnBảnĐồSangPhảiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem keyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem enableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem disableToolStripMenuItem;
     }
 }
 

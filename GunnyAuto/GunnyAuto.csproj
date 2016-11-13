@@ -36,6 +36,9 @@
     <ApplicationIcon>icon_Minh_64x64.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Hock">
+      <HintPath>lib\Hock.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +64,7 @@
     <Compile Include="FormBangLuc.Designer.cs">
       <DependentUpon>FormBangLuc.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProcessKeyboard.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
