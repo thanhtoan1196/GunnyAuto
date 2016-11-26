@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GunnyAuto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Game>
+    <LoginTab server="Gà Hỏa Phụng" player="TonyHoang" user="chienbinhmuadong002" pass="H0RHEmXlB2RgbSrhj24dqsb4Wei3Jrvdfxy+EGxYyL8=" channel="-1" />
+  </Game>
+  <Game>
+    <LoginTab server="Gà Đại Ca" player="minhhoang001" user="hminh3045" pass="UJZUzecJIDwuxFfE73M7az68PZlewCoa4FPse0JfQ/w=" channel="-1" />
+  </Game>
+  <Game>
+    <LoginTab server="Gà Hỏa Long" player="TonyHoang2" user="chienbinhmuadong003" pass="qJKj+gLZ6662MHQSU9gzXh+UFjMXJp4vcJlEwoQaUw0=" channel="0" />
+  </Game>
+</GunnyAuto>

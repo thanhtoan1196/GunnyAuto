@@ -67,6 +67,7 @@
             this.webBrowser1.Size = new System.Drawing.Size(1000, 600);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://gunny.360game.vn/", System.UriKind.Absolute);
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // pictureBox1
             // 
@@ -244,7 +245,7 @@
             // enableToolStripMenuItem
             // 
             this.enableToolStripMenuItem.Name = "enableToolStripMenuItem";
-            this.enableToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.enableToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.enableToolStripMenuItem.Text = "enable";
             this.enableToolStripMenuItem.Click += new System.EventHandler(this.enableToolStripMenuItem_Click);
             // 
@@ -253,7 +254,7 @@
             this.disableToolStripMenuItem.Checked = true;
             this.disableToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.disableToolStripMenuItem.Name = "disableToolStripMenuItem";
-            this.disableToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.disableToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.disableToolStripMenuItem.Text = "disable";
             this.disableToolStripMenuItem.Click += new System.EventHandler(this.disableToolStripMenuItem_Click);
             // 
@@ -272,6 +273,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Gunny-TonyHoang";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
