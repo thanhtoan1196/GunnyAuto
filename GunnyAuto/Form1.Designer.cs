@@ -272,8 +272,6 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Gunny-TonyHoang";
-            this.Activated += new System.EventHandler(this.Form1_Activated);
-            this.Deactivate += new System.EventHandler(this.Form1_Deactivate);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

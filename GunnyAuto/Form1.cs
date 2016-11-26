@@ -101,29 +101,6 @@ namespace GunnyAuto
             pk.SendKey("1245678");
         }
 
-        bool isApplicationActive = true;
-        private void Form1_Activated(object sender, EventArgs e)
-        {
-            if (isApplicationActive == false)
-            {
-                isApplicationActive = true;
-                KeyLoggerEn();
-                disableToolStripMenuItem.Checked = false;
-                enableToolStripMenuItem.Checked = true;
-            }
-        }
-
-        private void Form1_Deactivate(object sender, EventArgs e)
-        {
-            if (isApplicationActive == true)
-            {
-                isApplicationActive = false;
-                KeyLoggerDis();
-                disableToolStripMenuItem.Checked = true;
-                enableToolStripMenuItem.Checked = false;
-            }
-        }
-
         private void disableToolStripMenuItem_Click(object sender, EventArgs e)
         {
             KeyLoggerDis();
